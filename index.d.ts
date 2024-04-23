@@ -51,4 +51,26 @@ declare module "kbpgp" {
       cb: (err: Error | null, paload: Buffer | null) => void
     ): void;
   }
+
+  export class KeyManager {
+    static import_from_armored_pgp(
+      opts: { armored: string },
+      cb: (err: Error, pk: KeyManager) => void,
+    ): void;
+  }
+
+  export namespace keyring {
+    export class KeyRing {
+      add_key_manager(pk: KeyManager): void;
+    }
+  }
+
+  export class Literal {
+    toString(): string;
+  }
+
+  export function unbox(
+    opts: { keyfetch: keyring.KeyRing; armored: string },
+    cb: (err: Error, literals: Literal[]) => void,
+  ): void;
 }
