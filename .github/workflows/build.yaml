@@ -5,7 +5,6 @@ on:
   pull_request:
   workflow_dispatch:
 
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
   cancel-in-progress: true
@@ -17,8 +16,8 @@ jobs:
 
     strategy:
       fail-fast: false
-      matrix: 
-        node: 
+      matrix:
+        node:
           - 18.x
           - 16.x
           - 14.x
@@ -52,7 +51,6 @@ jobs:
       - name: Test
         run: pnpm test
 
-        
   test:
     runs-on: ubuntu-latest
     if: ${{ github.event_name != 'pull_request' || github.repository_owner != github.event.pull_request.head.repo.owner.login }}
@@ -80,3 +78,23 @@ jobs:
 
       - name: Test
         run: pnpm test
+
+  # Catch-all required check for test matrix
+  test-success:
+    needs:
+      - test-old
+      - test
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    if: always()
+    steps:
+      - name: Fail for failed or cancelled test-old
+        if: |
+          needs.test-old.result == 'failure' ||
+          needs.test-old.result == 'cancelled'
+        run: exit 1
+      - name: Fail for failed or cancelled test
+        if: |
+          needs.test.result == 'failure' ||
+          needs.test.result == 'cancelled'
+        run: exit 1
