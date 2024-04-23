@@ -1,11 +1,11 @@
-ICED=node_modules/.bin/iced
+ICED=node_modules/.bin/iced3
 BUILD_STAMP=build-stamp
 
 default: build
 all: build
 
 lib/%.js: src/%.iced
-	$(ICED) -b -I node -c -o `dirname $@` $<
+	$(ICED) -b -c -I node -m -o `dirname $@` $<
 
 $(BUILD_STAMP): \
 	lib/asymmetric.js \
