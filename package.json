@@ -44,8 +44,7 @@
     "browserify": "^16.5.0",
     "colors": "0.6.2",
     "iced-coffee-script": "108.0.11",
-    "iced-test": "0.0.30",
-    "icsify": "^0.8.0"
+    "iced-test": "0.0.30"
   },
   "packageManager": "pnpm@9.0.5",
   "scripts": {
