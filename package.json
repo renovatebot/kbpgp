@@ -1,24 +1,25 @@
 {
-  "name": "kbpgp",
+  "name": "@renovatebot/kbpgp",
   "description": "Keybase's PGP Implementation",
   "keywords": [
     "crypto",
     "pgp",
     "keybase"
   ],
+  "type": "commonjs",
   "author": "Maxwell Krohn",
-  "version": "2.1.16",
+  "version": "0.0.0-semantic-release",
   "license": "BSD-3-Clause",
   "types": "./index.d.ts",
   "main": "./lib/main.js",
   "directories": {
     "lib": "lib/"
   },
-  "homepage": "http://github.com/keybase/kbpgp",
-  "bugs": "https://github.com/keybase/kbpgp/issues",
+  "homepage": "http://github.com/renovatebot/kbpgp",
+  "bugs": "https://github.com/renovatebot/kbpgp/issues",
   "repository": {
     "type": "git",
-    "url": "git://github.com/keybase/kbpgp.git"
+    "url": "https://github.com/renovatebot/kbpgp.git"
   },
   "dependencies": {
     "bn": "^1.0.5",
