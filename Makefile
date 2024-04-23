@@ -1,8 +1,5 @@
 ICED=node_modules/.bin/iced
 BUILD_STAMP=build-stamp
-TEST_STAMP=test-stamp
-UGLIFYJS=node_modules/.bin/uglifyjs
-WD=`pwd`
 BROWSERIFY=node_modules/.bin/browserify
 
 default: build
@@ -10,8 +7,6 @@ all: build
 
 lib/%.js: src/%.iced
 	$(ICED) -I browserify -c -o `dirname $@` $<
-
-BROWSER=browser/kbpgp.js
 
 $(BUILD_STAMP): \
 	lib/asymmetric.js \
@@ -94,40 +89,16 @@ build: $(BUILD_STAMP)
 test-server: $(BUILD_STAMP)
 	$(ICED) test/run.iced
 
-test-browser: $(TEST_STAMP) $(BUILD_STAMP)
-	@echo "Please visit in your favorite browser --> file://$(WD)/test/browser/index.html"
-
-test/browser/test.js: test/browser/main.iced $(BUILD_STAMP)
-	$(BROWSERIFY) -i sodium -t icsify $< > $@
-
 test/benchmark/keybase.js: bench/main.js $(BUILD_STAMP)
 	$(BROWSERIFY) -i sodium -s keybase $< > $@
 
-$(TEST_STAMP): test/browser/test.js
-	date > $@
+test: test-server
 
-test: test-server test-browser
-
-$(BROWSER): lib/main.js $(BUILD_STAMP)
-	$(BROWSERIFY) -i sodium -s kbpgp $< > $@
-
-release: $(BROWSER)
-	V=`jq -r .version package.json` ; \
-	cp $< rel/kbpgp-$$V.js ; \
-	$(UGLIFYJS) -c < rel/kbpgp-$$V.js > rel/kbpgp-$$V-min.js ; \
-	rm -rf rel/kbpgp-$$V-signed-release.zip ; \
-	rm -rf rel/kbpgp ; \
-	mkdir rel/kbpgp ; \
-	cp rel/kbpgp-$$V.js     rel/kbpgp/ ; \
-	cp rel/kbpgp-$$V-min.js rel/kbpgp/ ; \
-	pushd rel/ ; \
-	popd ; \
-	rm -rf rel/kbpgp
 
 clean:
-	rm -rf lib/* $(BUILD_STAMP) $(TEST_STAMP) test/browser/test.js
+	rm -rf lib/* $(BUILD_STAMP)
 
 setup:
 	pnpm install
 
-.PHONY: clean setup test  test-browser
+.PHONY: clean setup test
