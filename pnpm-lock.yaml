@@ -55,8 +55,8 @@ importers:
         specifier: 112.8.1
         version: 112.8.1
       iced-test:
-        specifier: 0.0.30
-        version: 0.0.30
+        specifier: 1.0.0
+        version: 1.0.0
 
 packages:
 
@@ -166,8 +166,8 @@ packages:
   iced-runtime@1.0.4:
     resolution: {integrity: sha512-rgiJXNF6ZgF2Clh/TKUlBDW3q51YPDJUXmxGQXx1b8tbZpVpTn+1RX9q1sjNkujXIIaVxZByQzPHHORg7KV51g==}
 
-  iced-test@0.0.30:
-    resolution: {integrity: sha512-0gdvavi5CgrpK3tSnYO6vVhljL/N/IR/sV9y8oIH+2/MEE7effOgSCq9D3cSWH483iTymuKwX69yOgZQFukYOw==}
+  iced-test@1.0.0:
+    resolution: {integrity: sha512-DUAX7X3jiYN+zwbWgDw8uRCvONT7bjFY0Rq5/oobtglrFPMuzXSjaXQwZncOSYxJbbfUilkQnRzo4/w8EDntOw==}
 
   internal-slot@1.0.7:
     resolution: {integrity: sha512-NGnrKwXzSms2qUUih/ILZ5JBqNTSa1+ZmP6flaIp6KmSElgE9qdndzS3cqjrDovwFdmwsGsLdeFgB6suw+1e9g==}
@@ -464,7 +464,7 @@ snapshots:
 
   iced-runtime@1.0.4: {}
 
-  iced-test@0.0.30:
+  iced-test@1.0.0:
     dependencies:
       colors: 0.6.2
       deep-equal: 2.2.3

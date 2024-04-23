@@ -43,7 +43,7 @@
   "devDependencies": {
     "colors": "0.6.2",
     "iced-coffee-script-3": "112.8.1",
-    "iced-test": "0.0.30"
+    "iced-test": "1.0.0"
   },
   "packageManager": "pnpm@9.0.5",
   "scripts": {
