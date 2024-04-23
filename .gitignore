@@ -16,3 +16,5 @@ node_modules/
 build-stamp
 test-stamp
 test/browser/test.js
+
+lib/
