@@ -1,4 +1,4 @@
-declare module "kbpgp" {
+declare module "@renovatebot/kbpgp" {
   class BaseX {
     public base: number
     constructor(alphabet: string)
