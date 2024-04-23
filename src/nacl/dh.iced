@@ -79,7 +79,7 @@ class Priv
   decrypt : ({ciphertext, nonce, sender}, cb) ->
     err = res = null
     res = box.open b2u(ciphertext), b2u(nonce), b2u(sender.pub.key), b2u(@key)
-    if res is false
+    if res is null
       err = new Error "decryption failed"
       res = null
     else

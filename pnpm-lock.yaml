@@ -45,8 +45,8 @@ importers:
         specifier: ^4.0.3
         version: 4.0.3
       tweetnacl:
-        specifier: ^0.13.1
-        version: 0.13.1
+        specifier: ^1.0.3
+        version: 1.0.3
     devDependencies:
       colors:
         specifier: 1.4.0
@@ -309,6 +309,9 @@ packages:
 
   tweetnacl@0.13.1:
     resolution: {integrity: sha512-ttOOE2Rj8zynAlplICrHt4p/w7HB5SyKTn2x/Fr+9bBef0HD1yZK1lnyeWDX8ltHbq6y/tFj351s5ahvUxtufg==}
+
+  tweetnacl@1.0.3:
+    resolution: {integrity: sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==}
 
   uglify-js@3.17.4:
     resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
@@ -630,6 +633,8 @@ snapshots:
       uglify-js: 3.17.4
 
   tweetnacl@0.13.1: {}
+
+  tweetnacl@1.0.3: {}
 
   uglify-js@3.17.4: {}
 
