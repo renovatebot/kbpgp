@@ -128,6 +128,6 @@ clean:
 	rm -rf lib/* $(BUILD_STAMP) $(TEST_STAMP) test/browser/test.js
 
 setup:
-	npm install -d
+	pnpm install
 
 .PHONY: clean setup test  test-browser
