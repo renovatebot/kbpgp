@@ -16,7 +16,7 @@ importers:
         version: 1.0.0
       deep-equal:
         specifier: ^1.1.0
-        version: 1.1.0
+        version: 1.1.2
       iced-error:
         specifier: 0.0.13
         version: 0.0.13
@@ -74,8 +74,9 @@ packages:
     resolution: {integrity: sha512-OsSVtHK8Ir8r3+Fxw/b4jS1ZLPXkV6ZxDRJQzeD7qo0SqMXWrHDM71DgYzPMHY8SFJ0Ao+nNU2p1MmwdzKqPrw==}
     engines: {node: '>=0.1.90'}
 
-  deep-equal@1.1.0:
-    resolution: {integrity: sha512-ZbfWJq/wN1Z273o7mUSjILYqehAktR2NVoSrOukDkU9kg2v/Uv89yU4Cvz8seJeAmtN5oqiefKq8FPuXOboqLw==}
+  deep-equal@1.1.2:
+    resolution: {integrity: sha512-5tdhKF6DbU7iIzrIOa1AOUt39ZRm13cmL1cGEh//aqR8x9+tNfbywRf0n5FD/18OKMdo7DNEtrX2t22ZAkI+eg==}
+    engines: {node: '>= 0.4'}
 
   define-data-property@1.1.4:
     resolution: {integrity: sha512-rBMvIzlpA8v6E+SJZoo++HAYqsLrkg7MSfIinMPFhmkorw7X+dOXVJQs+QT69zGkzMyfDnIMN2Wid1+NbL3T+A==}
@@ -227,7 +228,7 @@ snapshots:
 
   colors@0.6.2: {}
 
-  deep-equal@1.1.0:
+  deep-equal@1.1.2:
     dependencies:
       is-arguments: 1.1.1
       is-date-object: 1.0.5
@@ -302,7 +303,7 @@ snapshots:
   iced-test@0.0.30:
     dependencies:
       colors: 0.6.2
-      deep-equal: 1.1.0
+      deep-equal: 1.1.2
       iced-runtime: 1.0.4
       minimist: 1.2.0
 
