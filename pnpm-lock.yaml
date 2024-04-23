@@ -21,8 +21,8 @@ importers:
         specifier: 0.0.13
         version: 0.0.13
       iced-lock:
-        specifier: ^1.0.2
-        version: 1.0.2
+        specifier: ^2.0.1
+        version: 2.0.1
       iced-runtime-3:
         specifier: ^3.0.5
         version: 3.0.5
@@ -139,6 +139,9 @@ packages:
 
   iced-lock@1.0.2:
     resolution: {integrity: sha512-qwm5uqpVMNiV2DcgoBqUPnEXAxTLv7zZ4jwKqJhjas3DGxXpaeXbuDyYCRBcu0B4Sz9sMf6rCegoXO2/hlkw/w==}
+
+  iced-lock@2.0.1:
+    resolution: {integrity: sha512-J6dnGMpAoHNyACUYJYhiJkLY7YFRTa7NMZ8ZygpYB3HNDOGWtzv55+kT2u1zItRi4Y1EXruG9d1VDsx8R5faTw==}
 
   iced-runtime-3@3.0.5:
     resolution: {integrity: sha512-OHU64z4Njq4EdoGyRId5NgUQKy6R1sr1wufc1fVxwpqKsM8yWagqmKCRlt//zKKIPOfZw7kQ1iN4m+/2s8WSeg==}
@@ -310,6 +313,10 @@ snapshots:
   iced-error@0.0.13: {}
 
   iced-lock@1.0.2:
+    dependencies:
+      iced-runtime: 1.0.4
+
+  iced-lock@2.0.1:
     dependencies:
       iced-runtime: 1.0.4
 
