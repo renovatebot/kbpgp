@@ -33,8 +33,8 @@ importers:
         specifier: ^1.1.4
         version: 1.1.4
       minimist:
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: ^1.2.8
+        version: 1.2.8
       pgp-utils:
         specifier: 0.0.35
         version: 0.0.35
@@ -241,8 +241,8 @@ packages:
   keybase-nacl@1.1.4:
     resolution: {integrity: sha512-7TFyWLq42CQs7JES9arR+Vnv/eMk5D6JT1Y8samrEA5ff3FOmaiRcXIVrwJQd3KJduxmSjgAjdkXlQK7Q437xQ==}
 
-  minimist@1.2.0:
-    resolution: {integrity: sha512-7Wl+Jz+IGWuSdgsQEJ4JunV0si/iMhg42MnQQG6h1R6TNeVenp4U9x5CC5v/gYqz/fENLQITAWXidNtVL0NNbw==}
+  minimist@1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
 
   more-entropy@0.0.7:
     resolution: {integrity: sha512-e0TxQtU1F6/ZA8WnEA2JLQwwDqBTtZFLJSW7rWgUsQou35wx1IOL0g2O7q7oGoMgIJto+jHMnNGHLfSiylHRrw==}
@@ -472,7 +472,7 @@ snapshots:
       colors: 1.4.0
       deep-equal: 2.2.3
       iced-runtime: 1.0.4
-      minimist: 1.2.0
+      minimist: 1.2.8
 
   internal-slot@1.0.7:
     dependencies:
@@ -549,7 +549,7 @@ snapshots:
       tweetnacl: 0.13.1
       uint64be: 1.0.1
 
-  minimist@1.2.0: {}
+  minimist@1.2.8: {}
 
   more-entropy@0.0.7:
     dependencies:
