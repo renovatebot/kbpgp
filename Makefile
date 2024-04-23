@@ -1,6 +1,5 @@
 ICED=node_modules/.bin/iced
 BUILD_STAMP=build-stamp
-BROWSERIFY=node_modules/.bin/browserify
 
 default: build
 all: build
@@ -89,11 +88,7 @@ build: $(BUILD_STAMP)
 test-server: $(BUILD_STAMP)
 	$(ICED) test/run.iced
 
-test/benchmark/keybase.js: bench/main.js $(BUILD_STAMP)
-	$(BROWSERIFY) -i sodium -s keybase $< > $@
-
 test: test-server
-
 
 clean:
 	rm -rf lib/* $(BUILD_STAMP)
