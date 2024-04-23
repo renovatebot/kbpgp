@@ -41,14 +41,17 @@
     "tweetnacl": "^1.0.3"
   },
   "devDependencies": {
+    "conventional-changelog-conventionalcommits": "7.0.2",
     "colors": "1.4.0",
     "iced-coffee-script-3": "112.8.1",
-    "iced-test": "1.0.0"
+    "iced-test": "1.0.0",
+    "semantic-release": "23.0.8"
   },
   "packageManager": "pnpm@9.0.5",
   "scripts": {
     "clean": "make clean",
     "build": "make build",
+    "prepack": "make build",
     "test": "iced3 test/run.iced",
     "test:e2e": "node --test test/e2e/"
   }
