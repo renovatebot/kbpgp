@@ -49,8 +49,8 @@ importers:
         version: 0.13.1
     devDependencies:
       colors:
-        specifier: 0.6.2
-        version: 0.6.2
+        specifier: 1.4.0
+        version: 1.4.0
       iced-coffee-script-3:
         specifier: 112.8.1
         version: 112.8.1
@@ -81,8 +81,8 @@ packages:
     resolution: {integrity: sha512-GHTSNSYICQ7scH7sZ+M2rFopRoLh8t2bLSW6BbgrtLsahOIB5iyAVJf9GjWK3cYTDaMj4XdBpM1cA6pIS0Kv2w==}
     engines: {node: '>= 0.4'}
 
-  colors@0.6.2:
-    resolution: {integrity: sha512-OsSVtHK8Ir8r3+Fxw/b4jS1ZLPXkV6ZxDRJQzeD7qo0SqMXWrHDM71DgYzPMHY8SFJ0Ao+nNU2p1MmwdzKqPrw==}
+  colors@1.4.0:
+    resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==}
     engines: {node: '>=0.1.90'}
 
   deep-equal@2.2.3:
@@ -354,7 +354,7 @@ snapshots:
       get-intrinsic: 1.2.4
       set-function-length: 1.2.2
 
-  colors@0.6.2: {}
+  colors@1.4.0: {}
 
   deep-equal@2.2.3:
     dependencies:
@@ -466,7 +466,7 @@ snapshots:
 
   iced-test@1.0.0:
     dependencies:
-      colors: 0.6.2
+      colors: 1.4.0
       deep-equal: 2.2.3
       iced-runtime: 1.0.4
       minimist: 1.2.0
