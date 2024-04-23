@@ -49,7 +49,7 @@
   "scripts": {
     "clean": "make clean",
     "build": "make build",
-    "test": "iced test/run.iced",
+    "test": "iced3 test/run.iced",
     "test:e2e": "node --test test/e2e/"
   }
 }
