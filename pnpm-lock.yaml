@@ -52,8 +52,8 @@ importers:
         specifier: 0.6.2
         version: 0.6.2
       iced-coffee-script:
-        specifier: 108.0.11
-        version: 108.0.11
+        specifier: 108.0.14
+        version: 108.0.14
       iced-test:
         specifier: 0.0.30
         version: 0.0.30
@@ -125,8 +125,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  iced-coffee-script@108.0.11:
-    resolution: {integrity: sha512-fEsQu/Q+TNCnYFb3MCaH1TjK3JgvdD9MOhAzTxSDcLTcRt61IM0GCwfdizKg7dbhUtVOR75HcN/VVHrg5DKQEg==}
+  iced-coffee-script@108.0.14:
+    resolution: {integrity: sha512-e0CNmz51UGWRa2glPnUMnJM7oKQE81cxeC0WAgCjJDRImv3FDHldZr/Ngkbrgdbf1drGGzYWp+PWeJwXIfHwDw==}
     engines: {node: '>=0.8.0'}
     hasBin: true
 
@@ -286,9 +286,10 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  iced-coffee-script@108.0.11:
+  iced-coffee-script@108.0.14:
     dependencies:
       iced-runtime: 1.0.4
+      uglify-js: 3.17.4
 
   iced-error@0.0.13: {}
 
