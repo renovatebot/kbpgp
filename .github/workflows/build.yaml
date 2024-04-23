@@ -79,6 +79,9 @@ jobs:
       - name: Test
         run: pnpm test
 
+      - name: Test e2e
+        run: pnpm test:e2e
+
   # Catch-all required check for test matrix
   test-success:
     needs:
