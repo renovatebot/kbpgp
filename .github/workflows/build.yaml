@@ -1,18 +1,21 @@
 name: build
 
 on:
-  push:
-  pull_request:
-  workflow_dispatch:
+  workflow_call:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
+env:
+  DRY_RUN: ${{ github.ref_name != 'main' && !startsWith(github.ref_name, 'maint/')}}
+
 jobs:
   test-old:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name != 'pull_request' || github.repository_owner != github.event.pull_request.head.repo.owner.login }}
 
     strategy:
       fail-fast: false
@@ -48,7 +51,6 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name != 'pull_request' || github.repository_owner != github.event.pull_request.head.repo.owner.login }}
 
     steps:
       - name: Checkout
