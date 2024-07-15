@@ -125,18 +125,18 @@ packages:
     peerDependencies:
       '@octokit/core': '>=6'
 
-  '@octokit/plugin-throttling@9.3.0':
-    resolution: {integrity: sha512-B5YTToSRTzNSeEyssnrT7WwGhpIdbpV9NKIs3KyTWHX6PhpYn7gqF/+lL3BvsASBM3Sg5BAUYk7KZx5p/Ec77w==}
+  '@octokit/plugin-throttling@9.3.1':
+    resolution: {integrity: sha512-Qd91H4liUBhwLB2h6jZ99bsxoQdhgPk6TdwnClPyTBSDAdviGPceViEgUwj+pcQDmB/rfAXAXK7MTochpHM3yQ==}
     engines: {node: '>= 18'}
     peerDependencies:
       '@octokit/core': ^6.0.0
 
-  '@octokit/request-error@6.1.1':
-    resolution: {integrity: sha512-1mw1gqT3fR/WFvnoVpY/zUM2o/XkMs/2AszUUG9I69xn0JFLv6PGkPhNk5lbfvROs79wiS0bqiJNxfCZcRJJdg==}
+  '@octokit/request-error@6.1.4':
+    resolution: {integrity: sha512-VpAhIUxwhWZQImo/dWAN/NpPqqojR6PSLgLYAituLM6U+ddx9hCioFGwBr5Mi+oi5CLeJkcAs3gJ0PYYzU6wUg==}
     engines: {node: '>= 18'}
 
-  '@octokit/request@9.1.1':
-    resolution: {integrity: sha512-pyAguc0p+f+GbQho0uNetNQMmLG1e80WjkIaqqgUkihqUp0boRU6nKItXO4VWnr+nbZiLGEyy4TeKRwqaLvYgw==}
+  '@octokit/request@9.1.3':
+    resolution: {integrity: sha512-V+TFhu5fdF3K58rs1pGUJIDH5RZLbZm5BI+MNF+6o/ssFNT4vWlCh/tVpF3NxGtP15HUxTTMUbsG5llAuU2CZA==}
     engines: {node: '>= 18'}
 
   '@octokit/types@13.5.0':
@@ -167,8 +167,8 @@ packages:
     resolution: {integrity: sha512-mgdxrHTLOjOddRVYIYDo0fR3/v61GNN1YGkfbrjuIKg/uMgCd+Qzo3UAXJ+woLQQpos4pl5Esuw5A7AoNlzjUQ==}
     engines: {node: '>=18'}
 
-  '@semantic-release/github@10.0.7':
-    resolution: {integrity: sha512-J7JiFvOu/8QKqFF5FDTk/k19Z/Jku4LdDof/+LsjaGgLOISJR7TL66q89c2YXV6Dh5Jw5VmiT4uK4q6SSfbQGA==}
+  '@semantic-release/github@10.1.0':
+    resolution: {integrity: sha512-g4RHBaCWJjGcEy95TeTdajlmUoP5jAaF5trGkFXHKsT/VpCwawhZbNW66+sUr0c2CIAdfpCxxmK+E7GyWBWJDw==}
     engines: {node: '>=20.8.1'}
     peerDependencies:
       semantic-release: '>=20.1.0'
@@ -862,9 +862,8 @@ packages:
   lodash.uniqby@4.7.0:
     resolution: {integrity: sha512-e/zcLx6CSbmaEgFHCA7BnoQKyCtKMxnuWrJygbwPs/AIn+IMKl66L8/s+wBUn5LRw2pZx3bUHibiV1b6aTWIww==}
 
-  lru-cache@10.4.0:
-    resolution: {integrity: sha512-bfJaPTuEiTYBu+ulDaeQ0F+uLmlfFkMgXj4cbwfuMSjgObGMzb55FMMbDvbRU0fAHZ4sLGkz2mKwcMg8Dvm8Ww==}
-    engines: {node: '>=18'}
+  lru-cache@10.4.3:
+    resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
   marked-terminal@7.1.0:
     resolution: {integrity: sha512-+pvwa14KZL74MVXjYdPR3nSInhGhNvPce/3mqLVZT2oUvt654sL1XImFuLZ1pkA866IYZ3ikDTOFUIC7XzpZZg==}
@@ -935,8 +934,8 @@ packages:
     resolution: {integrity: sha512-ppwTtiJZq0O/ai0z7yfudtBpWIoxM8yE6nHi1X47eFR2EWORqfbu6CnPlNsjeN683eT0qG6H/Pyf9fCcvjnnnQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  npm@10.8.1:
-    resolution: {integrity: sha512-Dp1C6SvSMYQI7YHq/y2l94uvI+59Eqbu1EpuKQHQ8p16txXRuRit5gH3Lnaagk2aXDIjg/Iru9pd05bnneKgdw==}
+  npm@10.8.2:
+    resolution: {integrity: sha512-x/AIjFIKRllrhcb48dqUNAAZl0ig9+qMuN91RpZo3Cb2+zuibfh+KISl6+kVVyktDz230JKc208UkQwwMqyB+w==}
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
     bundledDependencies:
@@ -1523,8 +1522,8 @@ snapshots:
     dependencies:
       '@octokit/auth-token': 5.1.1
       '@octokit/graphql': 8.1.1
-      '@octokit/request': 9.1.1
-      '@octokit/request-error': 6.1.1
+      '@octokit/request': 9.1.3
+      '@octokit/request-error': 6.1.4
       '@octokit/types': 13.5.0
       before-after-hook: 3.0.2
       universal-user-agent: 7.0.2
@@ -1536,7 +1535,7 @@ snapshots:
 
   '@octokit/graphql@8.1.1':
     dependencies:
-      '@octokit/request': 9.1.1
+      '@octokit/request': 9.1.3
       '@octokit/types': 13.5.0
       universal-user-agent: 7.0.2
 
@@ -1550,24 +1549,24 @@ snapshots:
   '@octokit/plugin-retry@7.1.1(@octokit/core@6.1.2)':
     dependencies:
       '@octokit/core': 6.1.2
-      '@octokit/request-error': 6.1.1
+      '@octokit/request-error': 6.1.4
       '@octokit/types': 13.5.0
       bottleneck: 2.19.5
 
-  '@octokit/plugin-throttling@9.3.0(@octokit/core@6.1.2)':
+  '@octokit/plugin-throttling@9.3.1(@octokit/core@6.1.2)':
     dependencies:
       '@octokit/core': 6.1.2
       '@octokit/types': 13.5.0
       bottleneck: 2.19.5
 
-  '@octokit/request-error@6.1.1':
+  '@octokit/request-error@6.1.4':
     dependencies:
       '@octokit/types': 13.5.0
 
-  '@octokit/request@9.1.1':
+  '@octokit/request@9.1.3':
     dependencies:
       '@octokit/endpoint': 10.1.1
-      '@octokit/request-error': 6.1.1
+      '@octokit/request-error': 6.1.4
       '@octokit/types': 13.5.0
       universal-user-agent: 7.0.2
 
@@ -1604,12 +1603,12 @@ snapshots:
 
   '@semantic-release/error@4.0.0': {}
 
-  '@semantic-release/github@10.0.7(semantic-release@23.1.1)':
+  '@semantic-release/github@10.1.0(semantic-release@23.1.1)':
     dependencies:
       '@octokit/core': 6.1.2
       '@octokit/plugin-paginate-rest': 11.3.3(@octokit/core@6.1.2)
       '@octokit/plugin-retry': 7.1.1(@octokit/core@6.1.2)
-      '@octokit/plugin-throttling': 9.3.0(@octokit/core@6.1.2)
+      '@octokit/plugin-throttling': 9.3.1(@octokit/core@6.1.2)
       '@semantic-release/error': 4.0.0
       aggregate-error: 5.0.0
       debug: 4.3.5
@@ -1635,7 +1634,7 @@ snapshots:
       lodash-es: 4.17.21
       nerf-dart: 1.0.0
       normalize-url: 8.0.1
-      npm: 10.8.1
+      npm: 10.8.2
       rc: 1.2.8
       read-pkg: 9.0.1
       registry-auth-token: 5.0.2
@@ -2118,7 +2117,7 @@ snapshots:
 
   hosted-git-info@7.0.2:
     dependencies:
-      lru-cache: 10.4.0
+      lru-cache: 10.4.3
 
   http-proxy-agent@7.0.2:
     dependencies:
@@ -2354,7 +2353,7 @@ snapshots:
 
   lodash.uniqby@4.7.0: {}
 
-  lru-cache@10.4.0: {}
+  lru-cache@10.4.3: {}
 
   marked-terminal@7.1.0(marked@12.0.2):
     dependencies:
@@ -2420,7 +2419,7 @@ snapshots:
     dependencies:
       path-key: 4.0.0
 
-  npm@10.8.1: {}
+  npm@10.8.2: {}
 
   object-assign@4.1.1: {}
 
@@ -2606,7 +2605,7 @@ snapshots:
     dependencies:
       '@semantic-release/commit-analyzer': 12.0.0(semantic-release@23.1.1)
       '@semantic-release/error': 4.0.0
-      '@semantic-release/github': 10.0.7(semantic-release@23.1.1)
+      '@semantic-release/github': 10.1.0(semantic-release@23.1.1)
       '@semantic-release/npm': 12.0.1(semantic-release@23.1.1)
       '@semantic-release/release-notes-generator': 13.0.0(semantic-release@23.1.1)
       aggregate-error: 5.0.0
