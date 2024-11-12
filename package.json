@@ -44,7 +44,7 @@
     "colors": "1.4.0",
     "iced-coffee-script-3": "112.8.1",
     "iced-test": "1.0.0",
-    "semantic-release": "23.1.1"
+    "semantic-release": "24.2.0"
   },
   "packageManager": "pnpm@9.12.3",
   "scripts": {
