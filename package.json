@@ -52,7 +52,7 @@
     "build": "make build",
     "prepack": "make build",
     "test": "iced3 test/run.iced",
-    "test:e2e": "node --enable-source-maps --test test/e2e/"
+    "test:e2e": "node --enable-source-maps --test test/e2e/**/*.test.js"
   },
   "publishConfig": {
     "access": "public",
