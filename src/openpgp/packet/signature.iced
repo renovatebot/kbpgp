@@ -799,6 +799,8 @@ class Parser
       when S.signature_target then SignatureTarget
       when S.embedded_signature then EmbeddedSignature
       when S.issuer_fingerprint then IssuerFingerprint
+      # ignore for now
+      #when S.preferred_aead_algorithms then Experimental
       else
         if type >= S.experimental_low and type <= S.experimental_high then Experimental
         else throw new Error "Unknown signature subpacket: #{type}"

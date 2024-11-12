@@ -48,6 +48,15 @@ exports.openpgp = openpgp =
     signature_target : 31
     embedded_signature : 32
     issuer_fingerprint : 33
+    # https://github.com/gpg/gnupg/blob/master/common/openpgpdefs.h#L120
+    preferred_aead_algorithms: 34
+
+    attested_certifications: 37
+    key_block: 38
+
+    meta_hash: 40
+    trust_alias: 41
+
     experimental_low : 101
     experimental_high : 110
   sig_types :  # See RFC 4880 5.2.1. Signature Types
