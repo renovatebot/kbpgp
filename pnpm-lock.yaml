@@ -8,15 +8,9 @@ importers:
 
   .:
     dependencies:
-      bn:
-        specifier: ^1.0.5
-        version: 1.0.5
       bzip-deflate:
         specifier: ^1.0.0
         version: 1.0.0
-      deep-equal:
-        specifier: ^2.2.3
-        version: 2.2.3
       iced-error:
         specifier: 0.0.13
         version: 0.0.13
@@ -48,6 +42,9 @@ importers:
         specifier: ^1.0.3
         version: 1.0.3
     devDependencies:
+      bn:
+        specifier: ^1.0.5
+        version: 1.0.5
       colors:
         specifier: 1.4.0
         version: 1.4.0
