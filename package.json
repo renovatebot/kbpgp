@@ -26,6 +26,7 @@
     "pnpm": "^9.0.0"
   },
   "dependencies": {
+    "bn": "1.0.5",
     "bzip-deflate": "^1.0.0",
     "iced-error": "0.0.13",
     "iced-lock": "^2.0.1",
@@ -39,7 +40,6 @@
     "tweetnacl": "^1.0.3"
   },
   "devDependencies": {
-    "bn": "1.0.5",
     "conventional-changelog-conventionalcommits": "8.0.0",
     "colors": "1.4.0",
     "iced-coffee-script-3": "112.8.1",
