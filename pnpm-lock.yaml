@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      bn:
+        specifier: 1.0.5
+        version: 1.0.5
       bzip-deflate:
         specifier: ^1.0.0
         version: 1.0.0
@@ -42,9 +45,6 @@ importers:
         specifier: ^1.0.3
         version: 1.0.3
     devDependencies:
-      bn:
-        specifier: 1.0.5
-        version: 1.0.5
       colors:
         specifier: 1.4.0
         version: 1.4.0
