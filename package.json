@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "bn": "1.0.5",
-    "bzip-deflate": "^1.0.0",
+    "seek-bzip": "^2.0.0",
     "iced-error": "0.0.13",
     "iced-lock": "^2.0.1",
     "iced-runtime-3": "^3.0.5",
