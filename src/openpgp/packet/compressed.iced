@@ -4,7 +4,7 @@ C = require('../../const').openpgp
 asymmetric = require '../../asymmetric'
 zlib = require 'zlib'
 {uint_to_buffer} = require '../../util'
-bzipDeflate = require 'bzip-deflate'
+seekBzip = require 'seek-bzip'
 
 #=================================================================================
 
@@ -68,7 +68,7 @@ fix_zip_deflate = (buf, cb) ->
 bzip_inflate = (buf, cb) ->
   err = null
   try
-    ret = bzipDeflate buf
+    ret = seekBzip.decode buf
   catch e
     err = e
   cb err, ret
