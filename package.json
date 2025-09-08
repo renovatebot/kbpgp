@@ -23,7 +23,7 @@
   },
   "engines": {
     "node": "^20.9.0 || ^22.11.0",
-    "pnpm": "^9.0.0"
+    "pnpm": "^10.0.0"
   },
   "dependencies": {
     "bn": "1.0.5",
@@ -46,7 +46,7 @@
     "iced-test": "1.0.0",
     "semantic-release": "24.2.7"
   },
-  "packageManager": "pnpm@9.15.9",
+  "packageManager": "pnpm@10.15.1",
   "scripts": {
     "clean": "make clean",
     "build": "make build",
