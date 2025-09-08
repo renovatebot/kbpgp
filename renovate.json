@@ -4,7 +4,7 @@
   "forkProcessing": "enabled",
   "prCreation": "immediate",
   "automergeType": "pr",
-  "baseBranches": ["main", "/^maint/.+/"],
+  "baseBranchPatterns": ["main", "/^maint/.+/"],
   "packageRules": [
     {
       "matchDepTypes": ["dependencies"],
