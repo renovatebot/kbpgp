@@ -40,8 +40,9 @@
     "tweetnacl": "^1.0.3"
   },
   "devDependencies": {
-    "conventional-changelog-conventionalcommits": "9.1.0",
+    "@containerbase/semantic-release-pnpm": "1.2.1",
     "colors": "1.4.0",
+    "conventional-changelog-conventionalcommits": "9.1.0",
     "iced-coffee-script-3": "112.8.1",
     "iced-test": "1.0.0",
     "semantic-release": "24.2.8"
@@ -53,9 +54,5 @@
     "prepack": "make build",
     "test": "iced3 test/run.iced",
     "test:e2e": "node --enable-source-maps --test test/e2e/**/*.test.js"
-  },
-  "publishConfig": {
-    "access": "public",
-    "provenance": true
   }
 }
