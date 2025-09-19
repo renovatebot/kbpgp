@@ -47,7 +47,7 @@
     "iced-test": "1.0.0",
     "semantic-release": "24.2.8"
   },
-  "packageManager": "pnpm@10.15.1",
+  "packageManager": "pnpm@10.16.0",
   "scripts": {
     "clean": "make clean",
     "build": "make build",
